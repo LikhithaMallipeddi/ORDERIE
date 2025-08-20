@@ -41,5 +41,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "my first app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshdeepsingh2267/Gofood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arshdeepsingh2267/Gofood/issues"
+  },
+  "homepage": "https://github.com/arshdeepsingh2267/Gofood#readme"
 }
