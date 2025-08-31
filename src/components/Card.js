@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatchCart, useCart } from './ContextReducer'
 // import { Dropdown, DropdownButton } from 'react-bootstrap';
 export default function Card(props) {
-  let data = useCart();
+  let cartdata = useCart();
 
   let navigate = useNavigate()
   const [qty, setQty] = useState(1)
@@ -32,7 +32,7 @@ export default function Card(props) {
   }
   const handleAddToCart = async () => {
     let food = []
-    for (const item of data) {
+    for (const item of cartdata) {
       if (item.id === foodItem._id) {
         food = item;
 
