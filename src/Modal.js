@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-const MODAL_STYLES = {
+const MODAL_STYLES_CONFIG = {
   position: 'fixed',
   top: '50%',
   left: '50%',
@@ -27,7 +27,7 @@ export default function Modal({ children, onClose }) {
   return ReactDom.createPortal(
     <>
       <div style={OVERLAY_STYLES} />
-      <div style={MODAL_STYLES}>
+      <div style={MODAL_STYLES_CONFIG}>
         <button className='btn bg-danger fs-4' style={{ marginLeft: "90%", marginTop: "-35px" }} onClick={onClose}> X </button>
         {children}
       </div>
