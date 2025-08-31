@@ -9,7 +9,7 @@ import Modal from '../Modal';
 import Cart from '../screens/Cart';
 export default function Navbar(props) {
 
-    const [cartView, setCartView] = useState(false)
+    const [isCartvisible, setCartView] = useState(false)
     localStorage.setItem('temp', "first")
     let navigate = useNavigate();
     const handleLogout = () => {
